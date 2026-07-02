@@ -1,0 +1,28 @@
+# ── Secrets & Credentials ──
+*.env
+.env.*
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+*.keystore
+*.jks
+key.properties
+
+# ── OS junk ──
+.DS_Store
+Thumbs.db
+
+# ── Editor/IDE ──
+.vscode/
+.idea/
+*.swp
+
+# ── Build artifacts (agar future me website build tools use karo) ──
+node_modules/
+dist/
+build/
+.cache/
+
+# ── Logs ──
+*.log
+npm-debug.log*

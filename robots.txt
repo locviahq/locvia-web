@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://locviahq.github.io/locvia-web/sitemap.xml

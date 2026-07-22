@@ -5,16 +5,48 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://locviahq.github.io/locvia-web/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/safety.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/legal.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://locviahq.github.io/locvia-web/privacy.html</loc>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://locviahq.github.io/locvia-web/terms.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/guidelines.html</loc>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://locviahq.github.io/locvia-web/delete-account.html</loc>
+    <loc>https://locviahq.github.io/locvia-web/marketplace.html</loc>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/location.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/enforcement.html</loc>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/subscription.html</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://locviahq.github.io/locvia-web/delete-account.html</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://locviahq.github.io/locvia-web/contact.html</loc>

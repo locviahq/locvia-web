@@ -1,88 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="robots" content="noindex">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
-<title>Page Not Found — Locvia</title>
+<meta name="description" content="The page you're looking for doesn't exist.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'none'">
+<meta property="og:title" content="Page not found — Locvia">
+<meta property="og:description" content="The page you're looking for doesn't exist.">
+<meta property="og:type" content="website">
+<title>Page not found — Locvia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
 <style>
-  .notfound {
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--navy-950);
-    text-align: center;
-    padding: 40px 24px;
-  }
-  .notfound-inner { position: relative; z-index: 2; }
-  .notfound .code {
-    font-family: var(--font-accent);
-    font-style: italic;
-    font-weight: 500;
-    font-size: 96px;
-    color: var(--marigold-500);
-    line-height: 1;
-  }
-  .notfound h1 {
-    color: var(--white);
-    font-size: 26px;
-    font-weight: 800;
-    margin: 16px 0 10px;
-  }
-  .notfound p {
-    color: var(--mist-400);
-    font-size: 15px;
-    margin-bottom: 28px;
-  }
-  .radar-ring-mini {
-    position: absolute;
-    border-radius: 50%;
-    border: 1px solid rgba(107,140,255,0.2);
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .rm1 { width: 400px; height: 400px; }
-  .rm2 { width: 280px; height: 280px; }
+  .nf { min-height: 62vh; display:flex; align-items:center; justify-content:center;
+        background: var(--navy-950); text-align:center; padding: 60px 24px; position:relative; overflow:hidden; }
+  .nf-ring { position:absolute; border-radius:50%; border:1px solid rgba(107,140,255,.16);
+             top:50%; left:50%; transform:translate(-50%,-50%); }
+  .nf-r1 { width:420px; height:420px; } .nf-r2 { width:280px; height:280px; }
+  .nf-in { position:relative; z-index:2; }
+  .nf .code { font-family: var(--font-accent); font-style:italic; font-weight:500;
+              font-size: clamp(64px,9vw,104px); color: var(--marigold-500); line-height:1; }
+  .nf h1 { color: var(--white); font-size: clamp(20px,2.6vw,28px); font-weight:800; margin: 14px 0 10px; }
+  .nf p { color: var(--mist-400); font-size:15px; margin-bottom: 28px; }
 </style>
 </head>
 <body>
-
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span class="nav-logo-mark">L</span> Locvia</a>
+    <a href="index.html" class="nav-logo"><span class="nav-logo-mark" aria-hidden="true">L</span> Locvia</a>
     <ul class="nav-links">
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="terms.html">Terms</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="safety.html">Safety</a></li>
+      <li class="hide-sm"><a href="legal.html">Legal</a></li>
+      <li class="hide-sm"><a href="about.html">About</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.locvia.app" class="nav-cta" rel="noopener">Get the app</a></li>
     </ul>
   </div>
 </nav>
-
-<section class="notfound">
-  <div class="radar-ring-mini rm1"></div>
-  <div class="radar-ring-mini rm2"></div>
-  <div class="notfound-inner">
+<section class="nf">
+  <div class="nf-ring nf-r1" aria-hidden="true"></div>
+  <div class="nf-ring nf-r2" aria-hidden="true"></div>
+  <div class="nf-in">
     <div class="code">404</div>
     <h1>Nothing here, near you.</h1>
     <p>This page doesn't exist — but your neighbourhood marketplace does.</p>
-    <a href="index.html" class="btn btn-primary">Back to Home</a>
+    <a href="index.html" class="btn btn-primary">Back to home</a>
   </div>
 </section>
-
 <footer class="site-footer">
   <div class="footer-inner">
-    <ul class="footer-links">
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="terms.html">Terms & Conditions</a></li>
-      <li><a href="delete-account.html">Delete Account</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="footer-copy">© 2026 Locvia. All rights reserved.</div>
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="nav-logo-mark" aria-hidden="true">L</span> Locvia</a>
+        <p>A neighbourhood marketplace built on proximity and trust. Made in India by Locvia Technologies.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.locvia.app" rel="noopener">Get the app</a></li>
+          <li><a href="safety.html">Safety Center</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Policies</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="guidelines.html">Community Guidelines</a></li>
+          <li><a href="legal.html">All policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="delete-account.html">Delete Account</a></li>
+          <li><a href="mailto:hello.locvia@gmail.com">hello.locvia@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Locvia Technologies. All rights reserved.</span>
+      <span>Buy. Sell. Near You.</span>
+    </div>
   </div>
 </footer>
-
 </body>
 </html>

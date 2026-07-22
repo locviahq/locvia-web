@@ -1,122 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Locvia Privacy Policy">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:;">
+<meta name="description" content="How Locvia collects, uses, protects and retains your data — in plain terms.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; base-uri 'self'; form-action 'none'">
+<meta property="og:title" content="Privacy Policy — Locvia">
+<meta property="og:description" content="How Locvia collects, uses, protects and retains your data — in plain terms.">
+<meta property="og:type" content="website">
 <title>Privacy Policy — Locvia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+
 </head>
 <body>
-
 <nav class="navbar">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo"><span class="nav-logo-mark">L</span> Locvia</a>
+    <a href="index.html" class="nav-logo"><span class="nav-logo-mark" aria-hidden="true">L</span> Locvia</a>
     <ul class="nav-links">
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="terms.html">Terms</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="safety.html">Safety</a></li>
+      <li class="hide-sm"><a href="legal.html">Legal</a></li>
+      <li class="hide-sm"><a href="about.html">About</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.locvia.app" class="nav-cta" rel="noopener">Get the app</a></li>
     </ul>
   </div>
 </nav>
-
 <div class="legal-wrap">
-  <span class="legal-eyebrow">Legal</span>
+  <span class="eyebrow">Legal</span>
   <h1>Privacy <em>Policy</em></h1>
   <p class="legal-updated">Last updated: July 2026</p>
-
-  <p style="color:var(--ink-600); font-size:15px; max-width:640px;">Locvia ("we", "us", "our") operates the Locvia mobile application (the "App"), a hyperlocal marketplace connecting buyers and sellers within their neighbourhood. This policy explains what we collect, how we use it, and the choices you have.</p>
+  <p class="legal-intro">This Privacy Policy explains how Locvia Technologies ("Locvia", "we", "us", "our") collects, uses, discloses, retains, and protects information when you use the Locvia mobile application and any related services (collectively, the "Service"). This Policy is designed to comply with applicable data protection laws, including India's Digital Personal Data Protection Act, 2023 ("DPDP Act"), the Information Technology Act, 2000 and its rules, the EU General Data Protection Regulation ("GDPR") for users in the European Economic Area, and the California Consumer Privacy Act ("CCPA") for California residents, to the extent applicable to our operations. By creating an account or otherwise using the Service, you acknowledge that you have read and understood this Policy.</p>
 
   <div class="legal-section">
     <div class="legal-num">01</div>
     <div class="legal-body">
-      <h2>Information We Collect</h2>
-      <p><strong>Phone Number.</strong> Used to verify your identity via OTP authentication. Required to create an account, never shared directly with other users.</p>
-      <p><strong>Profile Information.</strong> Your name, state, district, area, and mohalla — provided by you during signup — to personalize your marketplace experience.</p>
-      <p><strong>Location Data.</strong> With your permission, we access your device location to show listings within your 6km radius. You can decline and enter your area manually instead.</p>
-      <p><strong>Listings & Content.</strong> Title, description, price, category, and photos for any listing you create.</p>
-      <p><strong>Photos.</strong> Profile and listing images, stored securely via Firebase Cloud Storage.</p>
-      <p><strong>Chat Messages.</strong> Stored to enable in-app conversation history.</p>
-      <p><strong>Usage & Device Data.</strong> Device type, OS, app version, and crash logs to improve stability.</p>
+      <h2>Definitions</h2>
+      <p><strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person. <strong>"Processing"</strong> means any operation performed on Personal Data, including collection, storage, use, disclosure, or deletion. <strong>"User", "you"</strong> refers to any individual who accesses or uses the Service. <strong>"Listing"</strong> means any item, service, or content posted by a user on the Service. <strong>"Third-Party Service Provider"</strong> means any external service (such as Google Firebase) that processes data on our behalf.</p>
     </div>
   </div>
-
   <div class="legal-section">
     <div class="legal-num">02</div>
     <div class="legal-body">
-      <h2>How We Use Your Information</h2>
+      <h2>Information We Collect</h2>
+      <h3>2.1 Information You Provide Directly</h3>
       <ul>
-        <li>To create and manage your account</li>
-        <li>To show you listings and sellers near your location</li>
-        <li>To enable buyer–seller chat</li>
-        <li>To send push notifications via Firebase Cloud Messaging</li>
-        <li>To detect and prevent fraud, spam, or abuse</li>
-        <li>To improve app performance and fix bugs</li>
+        <li><strong>Phone Number</strong> — collected and verified via One-Time Password (OTP) at signup, used as your primary account identifier.</li>
+        <li><strong>Profile Information</strong> — your name, profile photo (if provided), and self-reported area, district, and state.</li>
+        <li><strong>Listing Content</strong> — titles, descriptions, prices, categories, and photographs you upload when creating a listing.</li>
+        <li><strong>Communications</strong> — messages you send through in-app chat with other users.</li>
+        <li><strong>Reports and Feedback</strong> — information you submit when reporting a user, listing, or technical problem.</li>
       </ul>
+      <h3>2.2 Information Collected Automatically</h3>
+      <ul>
+        <li><strong>Location Data</strong> — with your permission, we collect approximate or precise GPS coordinates to calculate distance for our hyperlocal ("nearby") feed and to auto-fill your area and district. You may deny or later revoke this permission through your device settings.</li>
+        <li><strong>Device and Usage Information</strong> — device model, operating system version, app version, crash logs, and general usage patterns (such as screens visited and features used), collected for analytics and app stability purposes.</li>
+        <li><strong>IP Address</strong> — collected incidentally by our infrastructure providers as part of standard network communication and security monitoring; we do not use IP address as a primary means of identifying you.</li>
+      </ul>
+      <h3>2.3 Information We Do Not Collect</h3>
+      <p>We do not access your device contacts, call logs, SMS messages (other than the automatic OTP retrieval permitted by Android for authentication), camera roll beyond images you explicitly select to upload, or any biometric data. If any future feature requires additional categories of data, we will update this Policy and, where legally required, obtain your fresh consent before collection begins.</p>
     </div>
   </div>
-
   <div class="legal-section">
     <div class="legal-num">03</div>
     <div class="legal-body">
-      <h2>Data Storage & Security</h2>
-      <p>Your data is stored using Google Firebase (Firestore, Cloud Storage, Authentication), encrypted in transit (HTTPS/TLS) and at rest. OTP codes are never stored after verification. We use reasonable technical and organizational safeguards, though no internet transmission is 100% secure.</p>
+      <h2>How We Use Your Information</h2>
+      <p>We Process Personal Data for the following purposes: (a) to create and authenticate your account via OTP; (b) to operate the hyperlocal marketplace, including displaying listings within your configured radius; (c) to enable in-app communication between buyers and sellers while shielding your phone number from other users; (d) to send you transactional and service notifications (such as new messages or nearby listings), subject to your notification preferences; (e) to investigate reports of abuse, fraud, or policy violations; (f) to maintain, debug, and improve the Service through aggregated or de-identified analytics; and (g) to comply with legal obligations, enforce our Terms &amp; Conditions, and protect the rights, property, and safety of Locvia, our users, and the public.</p>
     </div>
   </div>
-
   <div class="legal-section">
     <div class="legal-num">04</div>
     <div class="legal-body">
-      <h2>Data Sharing</h2>
-      <p>We do <strong>not</strong> sell your personal data. Your name, area, and listing details are visible to other users as part of core marketplace functionality. We share data with service providers (Firebase/Google Cloud) only to operate the App, and with law enforcement only if legally required.</p>
+      <h2>Legal Basis for Processing (GDPR)</h2>
+      <p>For users in jurisdictions requiring a legal basis for Processing, we rely on: performance of a contract (to provide the Service you signed up for); legitimate interests (to secure, maintain, and improve the Service, and to prevent fraud), balanced against your rights; consent (for optional features such as precise location or marketing communications, where required); and legal obligation (where Processing is necessary to comply with applicable law).</p>
     </div>
   </div>
-
   <div class="legal-section">
     <div class="legal-num">05</div>
     <div class="legal-body">
-      <h2>Your Rights & Choices</h2>
+      <h2>How We Share Your Information</h2>
+      <p><strong>We do not sell your Personal Data.</strong> We do not display your phone number to other users under any circumstance — all buyer-seller communication occurs through in-app chat. Your first name and general area (not your precise address) are visible on your public listings and profile. We share information only in the following circumstances:</p>
       <ul>
-        <li>Edit or delete your listings anytime from within the App</li>
-        <li>Update your profile from Settings</li>
-        <li>Disable location access from device settings and enter your area manually</li>
-        <li>Request full account and data deletion — see <a href="delete-account.html">Delete Account</a></li>
+        <li>With Third-Party Service Providers who process data on our behalf under contractual confidentiality and security obligations, including: Google Firebase (Authentication, Cloud Firestore database, Cloud Storage for photos, Cloud Messaging for push notifications, Analytics, and Crashlytics for crash reporting) and Google Cloud Platform (hosting infrastructure).</li>
+        <li>With law enforcement, regulators, or courts where disclosure is required by applicable law, legal process, or to protect the rights, safety, or property of Locvia, our users, or the public.</li>
+        <li>In connection with a merger, acquisition, financing, or sale of assets, in which case we will notify you of any change in ownership or use of your Personal Data.</li>
+        <li>With your explicit consent, for any purpose not otherwise described in this Policy.</li>
       </ul>
-      <div class="callout">
-        <p><strong>Data Protection (India):</strong> Processed in line with the Digital Personal Data Protection Act, 2023 — we collect only what's necessary and retain it only as long as needed.</p>
-      </div>
     </div>
   </div>
-
   <div class="legal-section">
     <div class="legal-num">06</div>
     <div class="legal-body">
-      <h2>Children's Privacy</h2>
-      <p>Locvia is not intended for users under 18. We do not knowingly collect data from minors — contact us if you believe a minor holds an account and we'll remove it.</p>
+      <h2>Third-Party Services</h2>
+      <p>Locvia is built on Google Firebase and Google Play Services. These providers may independently collect certain technical data (such as device identifiers used for push notification delivery) under their own privacy terms, available at Google's Privacy Policy (policies.google.com/privacy). Our use of Google Play Services is also subject to Google Play's Developer Distribution Agreement. We select service providers who maintain appropriate technical and organizational security measures, but we do not control their independent data practices beyond our contractual instructions to them.</p>
     </div>
   </div>
-
   <div class="legal-section">
     <div class="legal-num">07</div>
     <div class="legal-body">
-      <h2>Changes & Contact</h2>
-      <p>We may update this policy — changes appear here with a new date. Continued use after changes means acceptance. Questions? Reach us via <a href="contact.html">Contact</a> or email <a href="mailto:hello.locvia@gmail.com">hello.locvia@gmail.com</a>.</p>
+      <h2>Location Services</h2>
+      <p>Location access is fundamental to Locvia's hyperlocal marketplace model and is used to: (a) determine listings and users within your configured radius (currently approximately 6 kilometers); (b) auto-populate your area, district, and state during signup and profile edits; and (c) improve the relevance of notifications about nearby listings. Location data is stored as coordinates associated with your account and, where you post a listing, with that listing. We do not continuously track your location in the background outside of active use of location-dependent features. You may deny location permission or use manual state/district selection as an alternative; doing so may reduce the accuracy of nearby listing recommendations. See our standalone <a href="location.html">Location Services Policy</a> for further detail.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">08</div>
+    <div class="legal-body">
+      <h2>Data Retention</h2>
+      <p>We retain your Personal Data for as long as your account remains active and as necessary to provide the Service. If you delete your account through Settings, your account enters a 30-day grace period during which it is deactivated but recoverable by logging back in. After 30 days, we permanently delete your profile, listings, and message content from active systems, except where retention is required to comply with a legal obligation, resolve disputes, enforce our agreements, or as reflected in routine backup cycles, which are purged on a rolling basis. Aggregated or de-identified data that can no longer be linked to you may be retained indefinitely for analytics and product improvement.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">09</div>
+    <div class="legal-body">
+      <h2>Your Rights</h2>
+      <p>Subject to applicable law, you have the right to: access the Personal Data we hold about you; correct inaccurate or incomplete data (via Edit Profile); request deletion of your account and associated data (via Settings → Delete Account, or see our <a href="delete-account.html">Delete Account</a> page); withdraw consent for optional Processing (such as location access) at any time through your device settings, without affecting the lawfulness of Processing before withdrawal; object to or request restriction of certain Processing; and, where applicable under GDPR, request data portability. EEA and UK residents additionally have the right to lodge a complaint with their local data protection supervisory authority. To exercise any of these rights, contact us using the details in Section 15.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">10</div>
+    <div class="legal-body">
+      <h2>Data Security</h2>
+      <p>We implement industry-standard technical and organizational safeguards to protect your Personal Data, including encryption of data in transit (TLS) and at rest via our infrastructure provider, access controls limiting internal data access to authorized personnel on a need-to-know basis, and phone number verification via OTP to reduce account takeover risk. No method of electronic transmission or storage is completely secure, and we cannot guarantee absolute security. You are responsible for maintaining the confidentiality of any device or session used to access your account.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">11</div>
+    <div class="legal-body">
+      <h2>Children's Privacy</h2>
+      <p>The Service is not directed to, and we do not knowingly collect Personal Data from, individuals under the age of 18 (or the age of legal majority in your jurisdiction, if higher). If we become aware that we have inadvertently collected Personal Data from a minor, we will take reasonable steps to delete such data promptly. Parents or guardians who believe a minor has created an account should contact us immediately using the details in Section 15.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">12</div>
+    <div class="legal-body">
+      <h2>Law Enforcement and Legal Requests</h2>
+      <p>We may disclose Personal Data in response to a valid legal request (such as a subpoena, court order, or government demand) where we have a good-faith belief that disclosure is required by law, or where necessary to protect the rights, property, or safety of Locvia, our users, or the public, including in cases of suspected fraud, harassment, or illegal activity. Where legally permitted, we will attempt to notify the affected user before disclosure. We may retain content and account information related to an active investigation or report beyond our standard retention period to preserve evidence.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">13</div>
+    <div class="legal-body">
+      <h2>International Data Transfers</h2>
+      <p>Our infrastructure providers may process and store data on servers located outside your country of residence, including in the United States, in accordance with their published data center locations. Where we transfer Personal Data of EEA, UK, or Swiss residents outside those regions, we rely on appropriate safeguards recognized under GDPR, such as Standard Contractual Clauses, to the extent applicable through our infrastructure providers' compliance frameworks.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">14</div>
+    <div class="legal-body">
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, the Service, or applicable law. Material changes will be communicated through the app or, where required by law, by obtaining renewed consent. The "Last updated" date at the top of this Policy indicates when it was last revised. Continued use of the Service after changes take effect constitutes your acceptance of the revised Policy.</p>
+    </div>
+  </div>
+  <div class="legal-section">
+    <div class="legal-num">15</div>
+    <div class="legal-body">
+      <h2>Contact Us</h2>
+      <p>For any questions, concerns, or requests regarding this Privacy Policy or our data practices, contact us at <a href="mailto:hello.locvia@gmail.com">hello.locvia@gmail.com</a>. We aim to respond to all privacy-related inquiries within a reasonable timeframe, consistent with applicable law.</p>
     </div>
   </div>
 </div>
-
 <footer class="site-footer">
   <div class="footer-inner">
-    <ul class="footer-links">
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="terms.html">Terms & Conditions</a></li>
-      <li><a href="delete-account.html">Delete Account</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <div class="footer-copy">© 2026 Locvia. All rights reserved.</div>
+    <div class="footer-cols">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="nav-logo-mark" aria-hidden="true">L</span> Locvia</a>
+        <p>A neighbourhood marketplace built on proximity and trust. Made in India by Locvia Technologies.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.locvia.app" rel="noopener">Get the app</a></li>
+          <li><a href="safety.html">Safety Center</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Policies</h5>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="guidelines.html">Community Guidelines</a></li>
+          <li><a href="legal.html">All policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="delete-account.html">Delete Account</a></li>
+          <li><a href="mailto:hello.locvia@gmail.com">hello.locvia@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Locvia Technologies. All rights reserved.</span>
+      <span>Buy. Sell. Near You.</span>
+    </div>
   </div>
 </footer>
-
 </body>
 </html>
